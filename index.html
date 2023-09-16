@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>RecyLink Signup (Demo)</title>
+<title>RecyLink Login (Demo)</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -23,27 +23,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <div class="w3-padding-64 w3-content w3-text-grey">
     <header class="w3-container w3-padding-1 w3-center w3-opacity">
-        <h1 class="">Signup</h1>
+        <h1 class="">Login</h1>
     </header>
-    <form action = "http://76.95.4.169:5000/adduser" method = "post">
-        <h3 class="w3-text-black">First name:</h3>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Ex. John" required name="first_name"></p><br>
-        <h3 class="w3-text-black">Last name:</h3>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Ex. Doe" required name="last_name"></p><br>
-        <h3 class="w3-text-black">Login name:</h3>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="Username" required name="login_name"></p><br>
-        <h3 class="w3-text-black">Email:</h3>
-        <p><input class="w3-input w3-padding-16" type="text" placeholder="examples@example.com" required name="email"></p><br>
-        <h3 class="w3-text-black">Phone number:</h3>
-        <p><input class="w3-input w3-padding-16" type="text" pattern="[0-9]{3}-[0-9]{7}" placeholder="XXX-XXXXXXX" required name="phone_number"></p><br>
-        <h3 class="w3-text-black">Password:</h3>
-        <p><input class="w3-input w3-padding-16" type="password" placeholder="Password" required name="login_password"></p>
-        <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          SIGN UP
-        </button>
-        </p>
+    <form action = "http://76.95.4.169:5000/logon" method = "get">
+          <h3 class="w3-text-black">Username:</h3>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Username" required name="login_name"></p><br>
+          <h3 class="w3-text-black">Password:</h3>
+          <p><input class="w3-input w3-padding-16" type="password" placeholder="Password" required name="login_password"></p>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              LOGIN
+            </button>
+          </p>
     </form>
-    <a href="/recylinkdemo/index.html">RETURN TO LOGIN</a>
+    <a href="/recylinkdemo/signup_screen.html">SIGN UP</a>
 </div>
+
 </html>
